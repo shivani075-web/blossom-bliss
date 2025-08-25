@@ -12,27 +12,22 @@
 <body>
     <!-- HEADER -->
     <header>
-        <!-- Hamburger for mobile -->
         <input type="checkbox" id="toggler">
         <label for="toggler" class="fas fa-bars"></label>
 
-        <div class="header-left">
-            <a href="#" class="logo">
-                <img src="flowe2.jpeg" height="50" width="50" alt="Flower Logo">
-                Blossom Bliss<span>.</span>
-            </a>
-        </div>
+        <a href="#" class="logo">
+            <img src="flowe2.jpeg" height="50" width="50" alt="Flower Logo">
+            Blossom Bliss<span>.</span>
+        </a>
 
-        <!-- Navigation -->
         <nav class="navbar">
             <a href="#Home">Home</a>
             <a href="#about">About</a>
+            <a href="#categories">Categories</a>
             <a href="#shop">Shop</a>
-            <a href="#reviews">Reviews</a>
             <a href="#contact">Contact</a>
         </nav>
 
-        <!-- Icons -->
         <div class="icons">
             <a href="#" class="fas fa-heart"></a>
             <a href="#" class="fas fa-shopping-cart"></a>
@@ -44,25 +39,81 @@
     <section class="Home" id="Home">
         <div class="content">
             <h1>Welcome to Blossom Bliss</h1>
-            <p>Your one-stop shop for all things floral.</p>
-            <a href="#shop" class="btn">Shop Now</a>
+            <p>Your one-stop shop for all things floral - Perfect gifts for every occasion.</p>
+            <a href="#categories" class="btn">Explore Categories</a>
         </div>
     </section>
 
     <!-- ABOUT -->
+    <!-- ABOUT -->
     <section class="about" id="about">
-        <div class="container">
-            <div>
-                <h1>About Blossom Bliss</h1>
-                <p>At Blossom Bliss, we believe flowers are more than just pretty petals — they’re little bursts of joy,
-                    celebration, and comfort. Our shop started with a passion for bringing nature’s beauty into everyday
-                    life. From delicate roses to exotic orchids, every arrangement is crafted with love and care.</p>
-                <p>Whether it’s a wedding, a birthday, or a “just because” moment, we’re here to make it bloom
-                    beautifully. Our flowers are sourced fresh daily, ensuring you get the brightest colors and the
-                    longest-lasting blooms.</p>
+        <h2 class="section-title">About Us</h2>
+        <div class="row">
+            <!-- Left: Image -->
+            <div class="image">
+                <img src="abt2.jpeg" alt="About Blossom Bliss">
             </div>
-            <div class="about-image">
-                <img src="hd1.jpg" alt="Beautiful flower arrangement">
+
+            <!-- Right: Content -->
+            <div class="content">
+                <div class="about-card">
+                    <h3><i class="fas fa-seedling"></i> Our Story</h3>
+                    <p>
+                        Blossom Bliss was founded with a simple idea – to spread happiness through flowers.
+                        What started as a small local flower shop has now grown into a trusted destination
+                        for floral gifts, décor, and arrangements for every occasion.
+                        We believe every bloom tells a story, and we are here to make your moments unforgettable.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3><i class="fas fa-heart"></i> Our Mission</h3>
+                    <p>
+                        Our mission is to deliver not just flowers but emotions,
+                        beautifully wrapped with love and care. Whether it’s a birthday, anniversary, wedding,
+                        or just a small gesture of love, we make sure every bouquet brings a smile.
+                    </p>
+                    <ul class="values">
+                        <li><i class="fas fa-leaf"></i> Sustainability</li>
+                        <li><i class="fas fa-gift"></i> Creativity</li>
+                        <li><i class="fas fa-smile"></i> Care & Happiness</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <h3><i class="fas fa-star"></i> Why Choose Us?</h3>
+                    <ul class="features">
+                        <li><i class="fas fa-seedling"></i> Fresh, handpicked flowers</li>
+                        <li><i class="fas fa-gift"></i> Unique arrangements & creative gifting ideas</li>
+                        <li><i class="fas fa-truck"></i> Reliable and timely delivery</li>
+                        <li><i class="fas fa-heart"></i> Affordable luxury for every occasion</li>
+                    </ul>
+                </div>
+
+                <a href="#shop" class="btn">🌸 Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GIFT CATEGORIES -->
+    <section class="gift-categories" id="categories">
+        <h2>Gift Categories</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="birthday.jpeg" alt="Birthday Gifts">
+                <h3>Birthday Gifts</h3>
+            </div>
+            <div class="category-card">
+                <img src="anniversary.jpg" alt="Anniversary Gifts">
+                <h3>Anniversary Gifts</h3>
+            </div>
+            <div class="category-card">
+                <img src="wedding.jpeg" alt="Wedding Flowers">
+                <h3>Wedding Flowers</h3>
+            </div>
+            <div class="category-card">
+                <img src="home.jpeg" alt="Home Decor">
+                <h3>Home Decor</h3>
             </div>
         </div>
     </section>
@@ -71,75 +122,115 @@
     <section class="shop" id="shop">
         <h2>Our Floral Collection</h2>
         <div class="product-grid">
-            <!-- Product 1 -->
             <div class="product-card">
-                <img src="rose-bouquet.jpg" alt="Rose Bouquet">
-                <h3>Rose Bouquet</h3>
-                <p class="price">$29.99</p>
-                <button class="btn">Add to Cart</button>
+                <img src="rose-bouquet.jpg" alt="Red Roses Bouquet">
+                <h3>Red Roses Bouquet</h3>
+                <p>₹999</p>
+                <a href="#" class="btn">Add to Cart</a>
             </div>
-            <!-- Product 2 -->
             <div class="product-card">
-                <img src="orchid_bouquet.jpeg" alt="Orchid Bouquet">
-                <h3>Orchid Arrangement</h3>
-                <p class="price">$39.99</p>
-                <button class="btn">Add to Cart</button>
+                <img src="orchid_bouquet.jpeg" alt="Orchid Elegance">
+                <h3>Orchid Elegance</h3>
+                <p>₹1199</p>
+                <a href="#" class="btn">Add to Cart</a>
             </div>
-            <!-- Product 3 -->
             <div class="product-card">
-                <img src="sunflower-bunch.jpeg" alt="Sunflower Bunch">
-                <h3>Sunflower Bunch</h3>
-                <p class="price">$24.99</p>
-                <button class="btn">Add to Cart</button>
+                <img src="lily-bouquet.jpg" alt="White Lilies">
+                <h3>White Lilies</h3>
+                <p>₹999</p>
+                <a href="#" class="btn">Add to Cart</a>
             </div>
-            <!-- Product 4 -->
             <div class="product-card">
-                <img src="lily-bouquet.jpg" alt="Lily Bouquet">
-                <h3>Lily Bouquet</h3>
-                <p class="price">$34.99</p>
-                <button class="btn">Add to Cart</button>
+                <img src="tulip-bouquet.png" alt="Tulip Sunshine">
+                <h3>Tulip Sunshine</h3>
+                <p>₹899</p>
+                <a href="#" class="btn">Add to Cart</a>
             </div>
-            <!-- Product 5 -->
             <div class="product-card">
-                <img src="tulip-bouquet.png" alt="Tulip Bouquet">
-                <h3>Tulip Bouquet</h3>
-                <p class="price">$29.99</p>
-                <button class="btn">Add to Cart</button>
+                <img src="mixedflower.jpeg" alt="Mixed Flower Basket">
+                <h3>Mixed Flower Basket</h3>
+                <p>₹1499</p>
+                <a href="#" class="btn">Add to Cart</a>
             </div>
-            <!-- Product 6 -->
             <div class="product-card">
-                <img src="daisy-bouquet.jpeg" alt="Daisy Bouquet">
-                <h3>Daisy Bouquet</h3>
-                <p class="price">$19.99</p>
-                <button class="btn">Add to Cart</button>
+                <img src="sunflower-bunch.jpeg" alt="Sunflower Joy">
+                <h3>Sunflower Joy</h3>
+                <p>₹699</p>
+                <a href="#" class="btn">Add to Cart</a>
             </div>
-            <!-- Product 7 -->
             <div class="product-card">
-                <img src="lotus-bunch.jpeg" alt="lotus bunch">
-                <h3>Lotus Bunch</h3>
-                <p class="price">$34.99</p>
-                <button class="btn">Add to Cart</button>
+                <img src="lotus-bunch.jpeg" alt="Pink Carnations">
+                <h3>Pink Carnations</h3>
+                <p>₹899</p>
+                <a href="#" class="btn">Add to Cart</a>
             </div>
-            <!-- Product 8 -->
             <div class="product-card">
-                <img src="mixedflower.jpeg" alt="Mixed Flower Bouquet">
-                <h3>Mixed Flower Bouquet</h3>
-                <p class="price">$27.99</p>
-                <button class="btn">Add to Cart</button>
+                <img src="lavender-bouquet.jpeg" alt="lavender Bouquet">
+                <h3>lavender Bouquet</h3>
+                <p>₹1999</p>
+                <a href="#" class="btn">Add to Cart</a>
             </div>
-            <!-- Product 9 -->
             <div class="product-card">
-                <img src="lavender-bouquet.jpeg" alt="Lavender Bouquet">
-                <h3>Lavender Bouquet</h3>
-                <p class="price">$27.99</p>
-                <button class="btn">Add to Cart</button>
+                <img src="jasmine.jpg" alt="Jasmine Delight">
+                <h3>Jasmine Delight</h3>
+                <p>₹1399</p>
+                <a href="#" class="btn">Add to Cart</a>
             </div>
+            <div class="product-card">
+                <img src="marigold.jpg" alt="Marigold Bliss">
+                <h3>Marigold Bliss</h3>
+                <p>₹699</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="product-card">
+                <img src="daisy-bouquet.jpeg" alt="Daisy Delight">
+                <h3>Daisy Delight</h3>
+                <p>₹799</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="product-card">
+                <img src="hibiscus.jpeg" alt="Hibiscus Delight">
+                <h3>Hibiscus Delight</h3>
+                <p>₹799</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
     </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" id="address" name="address" placeholder="Enter your address" required>
+            <textarea placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+
+        </form>
+    </section>
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: ₹<span id="cart-total">0</span></p>
+            <button id="checkout-btn" class="btn">Checkout</button>
+        </div>
+        <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    </div>
+
 
     <!-- FOOTER -->
     <footer>
         <p>&copy; 2025 Blossom Bliss | Crafted with <i class="fas fa-heart"></i> for flower lovers</p>
     </footer>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
