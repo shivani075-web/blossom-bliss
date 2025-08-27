@@ -506,8 +506,10 @@ footer {
     border-bottom: 1px solid #ffe0ee; 
     color: #b83280; 
   }
-  .navbar.active {
-    display: flex; 
+
+  /* ✅ FIX ADDED HERE */
+  #toggler:checked ~ .navbar {
+    display: flex;
     z-index: 1001; 
   }
 }
