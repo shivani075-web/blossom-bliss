@@ -9,6 +9,13 @@ toggler.addEventListener("change", () => {
         navbar.classList.remove("active");
     }
 });
+// ===== RESPONSIVE NAVBAR AUTO-CLOSE (for mobile) =====
+document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener("click", function () {
+        document.getElementById("toggler").checked = false;
+        navbar.classList.remove("active");
+    });
+});
 
 // ================= SMOOTH SCROLL =================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -137,3 +144,4 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 
 fadeElems.forEach(elem => observer.observe(elem));
+
